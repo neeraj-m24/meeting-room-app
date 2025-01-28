@@ -19,7 +19,7 @@ object BookingConfirmationConsumer {
   def startConsumer()(implicit system: ActorSystem): Unit = {
     val props = new Properties()
     props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
-//    props.put(ConsumerConfig.GROUP_ID_CONFIG, "booking-confirmation-group")
+    props.put(ConsumerConfig.GROUP_ID_CONFIG, "booking-confirmation-group")
     props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
 
