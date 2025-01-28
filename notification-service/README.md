@@ -1,39 +1,31 @@
-# Automated Notification Module for Office Meeting Room Management System
+# Automated Notification Component for Office Space Management System
 
-This repository contains the **Automated Notification Module** for the **Office Meeting Room Management System**. The module handles the generation and dispatch of notifications related to meeting room readiness, reminders for upcoming meetings, and other notification needs.
+This repository includes the **Automated Notification Component** of the **Office Space Management System**. It manages the creation and distribution of notifications related to meeting room readiness, upcoming meeting reminders, and other system alerts.
 
 ---
 
-## Features
+## Key Features
 
-- **Room Preparation Alerts**: Notifies the RoomService team to prepare the room before scheduled meetings.
-- **Reminder Notifications**: Sends reminders to users about their upcoming meetings.
-- **Event-Driven Architecture**: Utilizes **Kafka** for efficient, real-time message publishing and consumption.
-- **Scalable Microservice**: Designed for scalability and fault tolerance using Akka Actors.
+- **Room Preparation Alerts**: Sends notifications to the RoomService team to prepare rooms before scheduled meetings.
+- **Meeting Reminder Notifications**: Sends timely reminders to users about their upcoming meetings.
+- **Event-Driven System**: Uses **Kafka** for real-time, efficient message publishing and consumption.
+- **Scalable Microservice**: Built for scalability and fault tolerance, utilizing Akka Actors for distributed processing.
 
 ---
 
 ## Repository Structure
 
-- **Notification Service**: Core logic for handling notification events.
-- **Kafka Consumer**: Listens for meeting-related events to trigger notifications.
-- **Configuration Files**: Includes configuration for Kafka, database, and notification templates.
+- **Notification Service**: Contains the core logic to process and send notification events.
+- **Kafka Consumer**: Listens to events related to meetings and triggers appropriate notifications.
+- **Configuration Files**: Includes setup files for Kafka, database connections, and notification templates.
 
 ---
 
 ## Tools and Technologies Used
 
 1. **Programming Language**: Scala
-2. **Frameworks**: Akka
+2. **Framework**: Akka
 3. **Message Broker**: Kafka
-4. **Database**: MySQL (for storing notification logs and configurations)
-5. **Containerization**: Docker
+4. **Database**: MySQL (for storing notification logs and settings)
 
 ---
-
-## How to Set Up and Run
-
-1. **Clone the Repository**:
-   ```bash
-   git clone ""
-   cd ""

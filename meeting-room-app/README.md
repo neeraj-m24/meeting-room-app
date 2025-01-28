@@ -1,41 +1,34 @@
-# Meeting Room Reservation Module for Office Meeting Room Management System
+# Meeting Room Reservation Component for Office Space Management System
 
-This repository contains the **Meeting Room Reservation Module** for the **Office Meeting Room Management System**. It provides functionality for reserving meeting rooms, checking availability, and managing meeting schedules efficiently.
+This repository includes the **Meeting Room Reservation Component** of the **Office Space Management System**. It provides functionality for reserving meeting rooms, checking availability, and managing meeting schedules efficiently.
 
 ---
 
-## Features
+## Key Features
 
-- **Meeting Room Reservation**: Enables users to book meeting rooms by specifying date, time, and room details.
-- **Availability Check**: Validates room availability during the desired time slot.
-- **Conflict Management**: Prevents overlapping bookings for the same room.
-- **Admin and User Roles**: Differentiates functionalities based on user roles.
+- **Room Booking**: Allows users to reserve meeting rooms by specifying the date, time, and room details.
+- **Availability Checking**: Validates whether the room is available within the specified time slot.
+- **Conflict Resolution**: Prevents double bookings for the same room at overlapping times.
+- **Role-Based Access**: Differentiates functionalities based on user roles (Admin, User).
 
 ---
 
 ## Repository Structure
 
-- **Reservation Service**: Core logic for creating, updating, and canceling reservations.
-- **Availability Endpoint**: API for checking room availability based on `room_id`, `startTime`, and `endTime`.
+- **Reservation Service**: Manages the core operations for creating, updating, and canceling reservations.
+- **Availability Endpoint**: Provides an API to check room availability using parameters like `room_id`, `startTime`, and `endTime`.
 - **Database Schema**:
-  - **Room Table**: Stores room details.
-  - **Reservation Table**: Stores meeting reservation details, including room, time, and user.
+    - **Room Table**: Stores details about the meeting rooms.
+    - **Reservation Table**: Stores information on meeting reservations, including room, time, and user details.
 
 ---
 
 ## Tools and Technologies Used
 
 1. **Programming Language**: Scala
-2. **Frameworks**: Play Framework
+2. **Framework**: Play Framework
 3. **Database**: MySQL
 4. **API Testing**: Postman or curl
-5. **Containerization**: Docker (for deployment)
 
 ---
 
-## How to Set Up and Run
-
-1. **Clone the Repository**:
-   ```bash
-   git clone ""
-   cd ""
